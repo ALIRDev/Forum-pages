@@ -28,6 +28,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 /* Show it is fixed to the top */
 body {
@@ -154,6 +155,8 @@ h5{
     background-color: #4c5156;
 }
 
+/* Loading animations */
+
 .loading {
     font-size: 3em;
     font-weight: bold;
@@ -210,6 +213,8 @@ span.load:nth-child(7) {
         transform: translateX(-10em);
     }
 }
+
+/* Donation style */
 
 #pricing{
     width: 989px;
@@ -278,32 +283,25 @@ span.load:nth-child(7) {
     border: 0 solid rgb(242, 242, 242);
     border-bottom-width: 1px;
 }
-button{
-    color: rgb(255, 255, 255);
-    border: 0;
-    border-radius: 5px;
-    height: 40px;
-    width: 200px;
-    display: block;
-    font-weight: 700;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin: 20px auto 35px;
-}
+
 .alpha button{
-    background: #ffff66 !important;
+    background: #c8c859 !important;
     color: #4c5156 !important;
 }
 .bravo button{
-    background: #ffff00 !important;
+    background: #ffff66 !important;
     color: #4c5156 !important;
 }
 .charlie button{
+    background: #ffff00 !important;
+    color: #4c5156 !important;
+}
+.delta button{
     background: #81d8d0 !important;
     color: #4c5156 !important;
 }
 .tip{
-    font-family: 'Indie Flower';
+    font-family: 'Indie Flower', serif;
     position: absolute;
     color: rgb(117, 117, 117);
     margin: 10px 5px;
@@ -311,4 +309,16 @@ button{
 
 .centered{
     text-align: center;
+}
+
+.fa-heart{
+    color: #B22222;
+}
+
+a.donate-link{
+    color: #4889c3;
+}
+
+a.donate-link:hover{
+    color: #c3ba25;
 }
