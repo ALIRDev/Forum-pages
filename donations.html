@@ -2,9 +2,178 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>ALIR - Donazioni</title>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ALIR Database Viewer">
+    <meta name="keywords" content="Altis, Italia, ALIR, alir, db">
+    <meta name="author" content="Andreacw">
+    <!-- Page favicon -->
+    <link rel="icon" href="https://i.imgur.com/SSdiFqD.png" type="image/gif"/>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Other CSS -->
+    <link href="css/donations.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 </head>
 <body>
+<div class="container" id="maindiv">
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" style="font-size: 150%; cursor:pointer;" data-toggle="tooltip" data-placement="top"
+           title="Torna alla pagina principale" onclick="goToHome()"><i class="fas fa-database"></i> <b
+                style="color: #007BCC">ALIR</b>DB</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample09">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" style="cursor:pointer;" data-toggle="modal" data-target="#helpModal"
+                       title="Informazioni su ALIRDB"> <i class="fas fa-info-circle "></i> Aiuto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.alir.eu/" data-toggle="tooltip" data-placement="top"
+                       title="Torna al forum"> <i class="fas fa-external-link-alt"></i> Torna al forum</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body alpha">
+                        <h3 class="price">5 €</h3>
+                        <p class="name">Donatore</p>
+                    </div>
+                    <ul class="list-group list-group-flush centered features">
+                        <li class="list-group-item">Badge sul Forum/Teamspeak 3</li>
+                        <li class="list-group-item">Spazio: 100 <i title="Massimale archivio messaggi privati" class="fas fa-envelope"></i> - 500MB <i title="Spazio allegati ed immagini" class="fas fa-images"></i></li>
+                        <li class="list-group-item">Firma nei post</li>
+                        <li class="list-group-item">Skin in game <i title="Visualizza le skin sbloccate" class="fas fa-images"></i></li>
+                    </ul>
+                    <div class="card-body centered">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#exampleModal">Dona ora!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body bravo">
+                        <h3 class="price">25 €</h3>
+                        <p class="name">Donatore+</p>
+                    </div>
+                    <ul class="list-group list-group-flush centered features">
+                        <li class="list-group-item">Badge sul Forum/Teamspeak 3</li>
+                        <li class="list-group-item">Spazio: 150 <i title="Massimale archivio messaggi privati" class="fas fa-envelope"></i> - 600MB <i title="Spazio allegati ed immagini" class="fas fa-images"></i></li>
+                        <li class="list-group-item">Firma nei post</li>
+                        <li class="list-group-item">Skin in game <i title="Visualizza le skin sbloccate" class="fas fa-images"></i></li>
+                    </ul>
+                    <div class="card-body centered">
+                        <a href="#" class="card-link">Dona ora!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body charlie">
+                        <h3 class="price">50 €</h3>
+                        <p class="name">Super donatore</p>
+                    </div>
+                    <ul class="list-group list-group-flush centered features">
+                        <li class="list-group-item">Badge sul Forum/Teamspeak 3</li>
+                        <li class="list-group-item">Spazio: 500 <i title="Massimale archivio messaggi privati" class="fas fa-envelope"></i> - 750MB <i title="Spazio allegati ed immagini" class="fas fa-images"></i></li>
+                        <li class="list-group-item">Firma nei post</li>
+                        <li class="list-group-item">Skin in game <i title="Visualizza le skin sbloccate" class="fas fa-images"></i></li>
+                        <li class="list-group-item">Targa personalizzata <i class="fas fa-id-badge"></i></li>
+                    </ul>
+                    <div class="card-body centered">
+                        <a href="#" class="card-link">Dona ora!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body delta">
+                        <h3 class="price">100 €</h3>
+                        <p class="name">Investitore</p>
+                    </div>
+                    <ul class="list-group list-group-flush centered features">
+                        <li class="list-group-item">Badge sul Forum/Teamspeak 3</li>
+                        <li class="list-group-item">Spazio: 1000 <i title="Massimale archivio messaggi privati" class="fas fa-envelope"></i> - 1GB <i title="Spazio allegati ed immagini" class="fas fa-images"></i></li>
+                        <li class="list-group-item">Firma nei post</li>
+                        <li class="list-group-item">Skin in game <i title="Visualizza le skin sbloccate" class="fas fa-images"></i></li>
+                        <li class="list-group-item" title="Trofeo sul forum">Investitore <i class="fas fa-trophy"></i></li>
+                        <li class="list-group-item">Targa personalizzata <i class="fas fa-id-badge"></i></li>
+                        <li class="list-group-item">Titolo personalizzato sul forum</li>
+                    </ul>
+                    <div class="card-body centered">
+                        <a href="#" class="card-link">Dona ora!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav aria-label="breadcrumb" role="navigation" class="pagec">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+              <span>Made with <i style="color: firebrick" class="fas fa-heart animated infinite pulse"></i> by <a
+                      href="https://www.alir.eu/profile/3-andreacw/" data-toggle="tooltip" data-placement="top"
+                      title="Visualizza il profilo di Andreacw">Andreacw</a></span> - <a href="https://www.alir.eu/"
+                                                                                         data-toggle="tooltip"
+                                                                                         data-placement="top"
+                                                                                         title="Vai al sito internet (alir.eu)">ALIR</a>
+                <i class="fab fa-creative-commons"></i> - <i
+                    class="fab fa-github"></i> <a data-toggle="tooltip" data-placement="top"
+                                                  title="Visualizza su GitHub"
+                                                  href="https://github.com/andreacw5/ALIRBD"> GitHub</a>
+            </li>
+        </ol>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+<script defer src="https://alir.eu/etero/js/fontawesome5.min.js"></script>
+<!--<script src="https://cdnjs.cat.net/ajax/libs/defiant.js/1.2.6/defiant.js"></script>-->
+<script src="js/donations.js"></script>
 </body>
 </html>
