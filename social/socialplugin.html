@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social plugins</title>
+</head>
+<style>
+    .social-aliricons {
+        margin: 0 auto;
+    }
+
+    .aliricon {
+        float: left;
+        position: relative;
+        width: 20%;
+        height: 0;
+        margin: 1% 1%;
+        padding-bottom: 17%;
+        padding-right:70px;
+    }
+    .aliricon a {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 130%;
+        border: 0;
+        background-color: #fff;
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+    .aliricon a:hover {
+        background-color: #474747;
+        background-size: 0;
+        -webkit-transition: all .2s ease-out;
+        transition: all .2s ease-out;
+    }
+
+    .aliricon__name {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: -7px;
+        color: #fff;
+        font-size: 13px;
+        text-align: center;
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        opacity: 0;
+        -webkit-filter: blur(25px);
+        filter: blur(25px);
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        will-change: transform;
+    }
+    .aliricon:hover .aliricon__name {
+        -webkit-transition: all .3s ease-out;
+        transition: all .3s ease-out;
+        opacity: 1;
+        -webkit-filter: blur(0);
+        filter: blur(0);
+    }
+
+    .aliricon--facebook a {
+        background-color: #3b5998;
+        background-image: url("http://alir.eu/etero/social/facebook-128.png");
+    }
+
+    .aliricon--twitter a {
+        background-color: #1da1f2;
+        background-image: url("http://alir.eu/etero/social/twitter-128.png");
+    }
+    .aliricon--telegram a {
+        background-color: #0088cc;
+        background-image: url("https://www.alir.eu/etero/social/Telegram.png");
+    }
+    .aliricon--youtube a {
+        background-color: #ff0000;
+        background-image: url("https://www.alir.eu/etero/social/Dakirby309-Simply-Styled-YouTube.ico");
+    }
+</style>
+<body style="background-color: #212327">
+<div class="ipsPad ipsWidget_inner">
+    <div id="socialDiv" style="min-height: 72px; width: 100%;">
+        <span class="social-aliricons">
+            <span class="aliricon aliricon--facebook">
+            <a href="https://www.facebook.com/altislifeitaliareloaded/" title="Vai alla pagina Facebook" target="_blank">
+                <span class="aliricon__name">Facebook</span>
+            </a>
+        </span>
+        <span class="aliricon aliricon--twitter">
+            <a href="" title="Vai alla pagina di Twitter" target="_blank">
+                <span class="aliricon__name">Twitter</span>
+            </a>
+        </span>
+        <span class="aliricon aliricon--youtube">
+            <a href="https://www.youtube.com/channel/UCz8hNTiTR0dwFOCJ0rg8f5Q" title="Vai al canale YouTube" target="_blank">
+                <span class="aliricon__name">Youtube</span>
+            </a>
+        </span>
+        <span class="aliricon aliricon--telegram">
+            <a href="https://t.me/joinchat/FuhWXEHTodV1GkDcoI49Fg" title="Unisciti al gruppo Telegram" target="_blank">
+                <span class="aliricon__name">Telegram</span>
+            </a>
+        </span>
+    </span>
+    </div>
+</div>
+</body>
+</html>
