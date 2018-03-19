@@ -2,7 +2,7 @@ var codeKey = 'bcdzrsb2sy4nfdpb3w9g2fk7f5kqre04c2k';
 
 $(document).ready(function () {
     var request = {
-        url: 'https://arma3-servers.net/api/?object=servers&element=detail&key={CODE}'.replace('{CODE}', codeKey),
+        url: 'https://arma3-servers.net/api/?object=servers&element=detail&key=' + codeKey,
         type: 'GET',
         success: onDataReceived,
         error: onDataError,
@@ -18,8 +18,6 @@ function onDataReceived(data) {
 
     $('#alirServerQueryLoading').attr('hidden',true);
     $('#alirServerQuerySuccess').removeAttr('hidden');
-
-    //console.log(data);
 
     $('#aliraddress').text(server.address);
     $('#alirport').text(server.port);
