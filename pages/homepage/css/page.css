@@ -170,16 +170,15 @@ nav{
     filter: blur(0);
 }
 
-.aliricon--facebook a {
+.aliricon-facebook a {
     background-image: url("https://alir.eu/etero/social/facebook.svg");
 }
-
-.aliricon--twitter a {
+.aliricon-twitter a {
     background-image: url("https://alir.eu/etero/social/twitter.svg");
 }
-.aliricon--telegram a {
+.aliricon-telegram a {
     background-image: url("https://www.alir.eu/etero/social/telegram.svg");
 }
-.aliricon--youtube a {
+.aliricon-youtube a {
     background-image: url("https://www.alir.eu/etero/social/youtube.svg");
 }
