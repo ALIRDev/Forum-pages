@@ -18,21 +18,17 @@ $.ajax({
 function serverStatusReceived(data) {
 
     var address = data.address;
-    var comments = data.comments;
     var favorited = data.favorited;
     var hostname = data.hostname;
     var is_online = data.is_online;
     var last_check = data.last_check;
-    var last_online = data.last_online;
     var location = data.location;
     var map = data.map;
     var maxplayers = data.maxplayers;
     var name = data.name;
-    var password = data.password;
     var platform = data.platform;
     var players = data.players;
     var port = data.port;
-    var private = data.private;
     var rank = data.rank;
     var score = data.score;
     var uptime = data.uptime;
@@ -41,6 +37,8 @@ function serverStatusReceived(data) {
     var votes = data.votes;
 
     if (is_online === '1') {
+
+        $('#alirservericon').attr('style','color:green');
 
         // Assegnazioni in pagina
         $('.aliruser').text(players);
@@ -51,7 +49,29 @@ function serverStatusReceived(data) {
         // Assegnazioni modale
         $('#alirservername').text(name);
         $('#alirlastcheck').text(last_check);
+        $('#alirmap').text(map);
+        $('#alirrank').text(rank);
 
+        // Uptime logic
+        var x = parseInt(uptime);
+        var v;
+
+        if (x = 100){
+            v = "<span class='badge badge-success'> "+ uptime + "% </span>"
+        }else if( x > 60){
+            v = "<span class='badge badge-warning'> "+ uptime + "% </span>"
+        }else{
+            v = "<span class='badge badge-danger'> "+ uptime + "% </span>"
+        }
+
+        $('#appendUptime').append(v)
+
+
+
+
+    }else{
+
+        $('#alirservericon').attr('style','color:red');
 
     }
 
