@@ -235,6 +235,10 @@ a{
         margin-top: 1em;
     }
 
+    .hideonphone{
+        display: none;
+    }
+
 }
 
 .infolink{
