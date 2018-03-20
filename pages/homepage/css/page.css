@@ -5,7 +5,7 @@
 /* Padding below the footer and lighter body text */
 
 body {
-    padding-top: 3rem;
+    padding-top: 5.7rem;
     padding-bottom: 3rem;
     background-color: #212327;
     color: #ffffff;
@@ -14,7 +14,7 @@ body {
 
 nav{
     font-family: 'Work Sans', sans-serif;
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bold;
     background: linear-gradient(141deg, #2D3035 0%, #2D3035 51%, #212327 75%);
 }
@@ -219,4 +219,20 @@ a{
 
 #tsserver:hover{
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 1100px){
+
+    #myCarousel{
+        display: none;
+    }
+
+    .pagec{
+       margin-top: 4px;
+    }
+
+    main{
+        margin-top: 1em;
+    }
+
 }
