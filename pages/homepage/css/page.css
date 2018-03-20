@@ -236,3 +236,12 @@ a{
     }
 
 }
+
+.infolink{
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.infolink:hover{
+    color: #0056b3 !important;
+}
