@@ -51,6 +51,7 @@ function serverStatusReceived(data) {
         $('#alirlastcheck').text(last_check);
         $('#alirmap').text(map);
         $('#alirrank').text(rank);
+        $('#arma3serverurl').attr('href', url);
 
         // Uptime logic
         var x = parseInt(uptime);
