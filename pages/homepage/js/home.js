@@ -26,7 +26,7 @@ function generateNews() {
     }).done(function (data) {
 
         var result = data.results;
-        var cutData = result.slice(0, 10);
+        var cutData = result.slice(0, 14);
         appendArticles(cutData);
 
     });
