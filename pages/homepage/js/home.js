@@ -27,6 +27,7 @@ function generateNews() {
         var cutData = result.slice(0, 10);
         appendArticles(cutData);
 
+
     });
 
 }
@@ -61,6 +62,7 @@ function appendArticles(data) {
 
     }
 
+    $('#loadPost').attr('hidden',true);
 }
 
 $(document).ready(function () {
