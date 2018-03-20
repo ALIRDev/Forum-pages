@@ -38,7 +38,7 @@ function serverStatusReceived(data) {
 
     if (is_online === '1') {
 
-        $('#alirservericon').attr('style','color:green');
+        $('#alirservericon').attr('style','color: #4CAF50');
 
         // Assegnazioni in pagina
         $('.aliruser').text(players);
@@ -71,11 +71,11 @@ function serverStatusReceived(data) {
 
     }else{
 
-        $('#alirservericon').attr('style','color:red');
+        $('#alirservericon').attr('style','color: #f44336');
 
     }
 
-    console.log(data);
+    //console.log(data);
 }
 
 function serverStatusError() {

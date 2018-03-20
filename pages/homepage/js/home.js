@@ -1,3 +1,5 @@
+console.log("Avvio ALIRHome, utilizzare la console solo per scopi di sviluppo, non trasmettere i propri dati personali o bancari!");
+
 // Abilito i tooltip ovunque
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
@@ -26,7 +28,6 @@ function generateNews() {
         var result = data.results;
         var cutData = result.slice(0, 10);
         appendArticles(cutData);
-
 
     });
 
@@ -60,9 +61,14 @@ function appendArticles(data) {
 
         $('#appendResultHere').append(element);
 
+        // Parse context to string
+        //var contentToText = content.replace(/<[^>]*>/g, '');
+        //var contentParsed = contentToText.substring(0,200);
+
     }
 
     $('#loadPost').attr('hidden',true);
+
 }
 
 $(document).ready(function () {
@@ -78,7 +84,7 @@ $.ajax({
     dataType: "json",
     timeout: 5000
 }).done(function (data) {
-    console.log(data)
+    //console.log(data)
 });
 
 // https://alir.eu/api/forums/topics?key=10f9dfa58c23a1ab511fc2478672ebef&forums=40,116,153&sortDir=desc&hidden=0
