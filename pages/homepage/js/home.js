@@ -33,6 +33,55 @@ function generateNews() {
 
 }
 
+function requestStaffNews() {
+
+    var serverKey = "10f9dfa58c23a1ab511fc2478672ebef";
+
+    $.ajax({
+        url: "https://cors-anywhere.herokuapp.com/https://alir.eu/api/forums/topics?key=" + serverKey + "&forums=112&sortDir=desc&hidden=0",
+        type: 'GET',
+        dataType: "json",
+        timeout: 5000
+    }).done(function (data) {
+
+        var result = data.results;
+        var headingData = result.slice(0, 3);
+        var slideData = result.slice(0,1);
+
+        console.log(slideData);
+        appendHeading(headingData);
+
+    });
+
+}
+
+function appendHeading(data) {
+
+    for (var i = 0; i < data.length; i++) {
+
+        var forum = data[i].forum.name;
+        var topicTitle = data[i].title;
+        var post = data[i].posts;
+        var topicUrl = data[i].url;
+        var views = data[i].views;
+        var author = data[i].firstPost.author.name;
+        var authorProfileUrl = data[i].firstPost.author.profileUrl;
+        var content = data[i].firstPost.content;
+        var firstDate = data[i].firstPost.date;
+
+        var element = "<div class='col-md-4'> " +
+            "<h4 class='worksans' style='min-height: 70px; max-height: 70px; overflow: hidden;'>" + topicTitle + "</h4> " +
+            "<p><div class='row'><div class='col-md-4'><button type='button' class='btn btn-secondary btn-sm'>Leggi</button></div><div class='col-md-4'><i class='fas fa-eye'></i> 300</div></div></p>" +
+            "</div>";
+
+        $('#appendHeadingTopic').append(element);
+
+    }
+
+    console.log("Import annunci completato!");
+
+}
+
 function appendArticles(data) {
 
     for (var i = 0; i < data.length; i++) {
@@ -68,11 +117,14 @@ function appendArticles(data) {
     }
 
     $('#loadPost').attr('hidden',true);
+    console.log("Import post completato!");
 
 }
 
 $(document).ready(function () {
+    console.log("Avvio import dati");
     generateNews();
+    requestStaffNews();
 });
 
 // https://alir.eu/api/forums/topics?key=a0d79d24019ae8e0c12af0c34e6ce57f&forums=112&sortBy=date&sortDir=desc
