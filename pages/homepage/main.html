@@ -10,8 +10,7 @@
     <!-- Page favicon -->
     <link rel="icon" href="https://i.imgur.com/SSdiFqD.png" type="image/gif"/>
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
-          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Other CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom styles for this template -->
@@ -19,7 +18,7 @@
 </head>
 <body>
 <header id="top">
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" >
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#" style="margin-left: 10%">
             <img style="background-size: auto; width: 130px; height: 70PX; background-repeat: no-repeat;"
                  src="https://www.alir.eu/uploads/monthly_2018_01/Logo.png.b29bb8e8779168ebf59eae26e492dadb.png"
@@ -125,7 +124,7 @@
         </a>
     </div>
 
-    <div class="container carousel">
+    <div class="container">
         <!-- Example row of columns -->
         <div class="row">
             <div class="col-md-3 pagec">
@@ -172,6 +171,17 @@
             </div>
         </div>
     </div>
+    <div class="container card">
+        <!-- Example row of columns -->
+        <div class="row" style="margin: 4px;">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+                    <i class="fas fa-server" id="alirservericon"></i> 4/300 - <i class="fas fa-server" style="color: green"></i>
+                </div>
+        </div>
+    </div>
     <div class="container carousel">
         <hr>
         <!-- Three columns of text below the carousel -->
@@ -193,7 +203,8 @@
                     <p><a class="btn btn-outline-light" href="#" role="button">Continua &raquo;</a></p>
                 </div>
                 <div class="col-md-4">
-                    <div class="card flex-md-row mb-4 box-shadow h-md-250" id="alirserver" data-toggle="modal" data-target="#serverDataModal">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250" id="alirserver" data-toggle="modal"
+                         data-target="#serverDataModal">
                         <div class="row">
                             <div class="col-md-9">
                                 <div class="card-body align-items-start">
@@ -206,8 +217,7 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="card-body">
-                                    <span style="text-align: center"><i id="alirservericon"
-                                                                        class="fas fa-server fa-4x"></i></span>
+                                    <span style="text-align: center"></span>
                                 </div>
                             </div>
                         </div>
@@ -217,13 +227,15 @@
                             <div class="col-md-9">
                                 <div class="card-body align-items-start">
                                     <strong class="d-inline-block">Teamspeak</strong>
-                                    <p class="card-text" style="margin-bottom: 0"><i class="fas fa-users"></i> 69/256</p>
+                                    <p class="card-text" style="margin-bottom: 0"><i class="fas fa-users"></i> 69/256
+                                    </p>
                                     <div class="text-muted" style="font-size: smaller">IP: TS.ALIR.EU</div>
                                 </div>
                             </div>
                             <div class="col-md-3">
                                 <div class="card-body">
-                                    <span style="text-align: center"><i style="color: green" class="fas fa-server fa-4x"></i></span>
+                                    <span style="text-align: center"><i style="color: green"
+                                                                        class="fas fa-server fa-4x"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +319,8 @@
                 <img class="mb-2  rounded mx-auto d-block"
                      src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
                 <small class="d-block mb-3 text-muted" style="text-align: center">© 2017-2018</small>
-                <small class="d-block mb-3 text-muted tip" style="text-align: center">Creata con <i class="fas fa-heart" style="color: firebrick;"></i>
+                <small class="d-block mb-3 text-muted tip" style="text-align: center">Creata con <i class="fas fa-heart"
+                                                                                                    style="color: firebrick;"></i>
                     da andreacw
                 </small>
             </div>
@@ -330,10 +343,14 @@
                 <div class="row">
                     <div class="col-md-6">
                         <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Indirizzo: <span class="aliraddress"></span>:<span class="alirport"></span></li>
-                            <li class="list-group-item">Slot: <span class="aliruser"></span>/<span class="alirmaxuser"></span></li>
+                            <li class="list-group-item">Indirizzo: <span class="aliraddress"></span>:<span
+                                    class="alirport"></span></li>
+                            <li class="list-group-item">Slot: <span class="aliruser"></span>/<span
+                                    class="alirmaxuser"></span></li>
                             <li class="list-group-item">Mappa: <span id="alirmap"></span></li>
-                            <li class="list-group-item">Ultimo controllo: <small id="alirlastcheck"></small></li>
+                            <li class="list-group-item">Ultimo controllo:
+                                <small id="alirlastcheck"></small>
+                            </li>
                         </ul>
                     </div>
                     <div class="col-md-6">
@@ -351,18 +368,13 @@
 </div>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
-        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-        crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
-        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script defer src="https://alir.eu/etero/js/fontawesome5.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/moment.min.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.21.0/locale/it.js"></script>
 <script defer src="js/home.js"></script>
 <script defer src="js/status.js"></script>
-<!--<script src="https://cdnjs.cat.net/ajax/libs/defiant.js/1.2.6/defiant.js"></script>-->
 </body>
 </html>
