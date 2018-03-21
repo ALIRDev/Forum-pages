@@ -59,7 +59,6 @@ function appendHeading(data) {
 
     for (var i = 0; i < data.length; i++) {
 
-        var forum = data[i].forum.name;
         var topicTitle = data[i].title;
         var topicUrl = data[i].url;
         var views = data[i].views;
@@ -73,8 +72,8 @@ function appendHeading(data) {
         var element2 = "<div class='col-md-4'> " +
             "<div class='card' style='min-height: 150px; max-height: 150px;'> " +
             "<div class='card-body'> " +
-            "<h5 class='card-title worksans'><a href='" + topicUrl + "'>" + topicTitle + "</a></h5> " +
-            "<div class='card-footer'><p class='card-text'><small class='text-muted'><i class='fas fa-eye' title='Visualizzazioni'></i> " + views + " - <i class='fas fa-user' title='Autore'></i> " + author + " - <i class='fas fa-clock' title='Scritto'></i> " + date + "</small></p></div>" +
+            "<h5 class='card-title worksans' style='min-height: 60px'><a href='" + topicUrl + "'>" + topicTitle + "</a></h5> " +
+            "<div class='card-footer' style='text-align: center'><p class='card-text'><small class='text-muted'><i class='fas fa-eye' title='Visualizzazioni'></i> " + views + " - <i class='fas fa-user' title='Autore'></i> " + author + " - <i class='fas fa-clock' title='Scritto'></i> " + date + "</small></p></div>" +
             "</div> </div> </div>";
 
         $('#appendHeadingTopic').append(element2);
