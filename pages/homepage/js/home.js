@@ -61,7 +61,6 @@ function appendHeading(data) {
 
         var forum = data[i].forum.name;
         var topicTitle = data[i].title;
-        var post = data[i].posts;
         var topicUrl = data[i].url;
         var views = data[i].views;
         var author = data[i].firstPost.author.name;
@@ -69,12 +68,16 @@ function appendHeading(data) {
         var content = data[i].firstPost.content;
         var firstDate = data[i].firstPost.date;
 
-        var element = "<div class='col-md-4'> " +
-            "<h4 class='worksans' style='min-height: 70px; max-height: 70px; overflow: hidden;'>" + topicTitle + "</h4> " +
-            "<p><div class='row'><div class='col-md-4'><button type='button' class='btn btn-secondary btn-sm'>Leggi</button></div><div class='col-md-4'><i class='fas fa-eye'></i> 300</div></div></p>" +
-            "</div>";
+        var date = moment(firstDate).fromNow();
 
-        $('#appendHeadingTopic').append(element);
+        var element2 = "<div class='col-md-4'> " +
+            "<div class='card' style='min-height: 150px; max-height: 150px;'> " +
+            "<div class='card-body'> " +
+            "<h5 class='card-title worksans'><a href='" + topicUrl + "'>" + topicTitle + "</a></h5> " +
+            "<div class='card-footer'><p class='card-text'><small class='text-muted'><i class='fas fa-eye' title='Visualizzazioni'></i> " + views + " - <i class='fas fa-user' title='Autore'></i> " + author + " - <i class='fas fa-clock' title='Scritto'></i> " + date + "</small></p></div>" +
+            "</div> </div> </div>";
+
+        $('#appendHeadingTopic').append(element2);
 
     }
 
