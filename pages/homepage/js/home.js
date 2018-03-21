@@ -80,6 +80,7 @@ function appendHeading(data) {
 
     }
 
+    $('#loadedArea').removeAttr('hidden');
     console.log("Import annunci completato!");
 
 }

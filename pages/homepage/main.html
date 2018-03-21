@@ -67,10 +67,9 @@
                      alt="First slide">
                 <div class="container">
                     <div class="carousel-caption text-left">
-                        <h1>Example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                        <h1>Benvenuto!</h1>
+                        <p>Testo vario</p>
+                        <p><a class="btn btn-lg btn-primary" href="https://www.alir.eu/login" role="button">Accedi/Registrati</a></p>
                     </div>
                 </div>
             </div>
@@ -80,7 +79,7 @@
                      alt="Second slide">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
+                        <h1>One or more info here?</h1>
                         <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
                             gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                         <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
@@ -184,54 +183,59 @@
     </div>
     <div class="container carousel">
         <hr>
-        <!-- Three columns of text below the carousel -->
-        <div class="container">
-            <!-- Example row of columns -->
-            <div class="row" id="appendHeadingTopic">
-                <!--<div class="col-md-4">
-                    <h2 class="worksans">HEADING</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
-                        magna mollis euismod. Donec sed odio dui. </p>
-                    <p><a class="btn btn-outline-light" href="#" role="button">Continua &raquo;</a></p>
-                </div>-->
-            </div>
-
-        </div> <!-- /container -->
-        <hr>
-        <div class="container carousel">
+        <div id="loadedArea"  hidden="">
+            <!-- Three columns of text below the carousel -->
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h2 class="worksans">post recenti</h2>
-                    </div>
-                </div>
+                <strong class="d-inline-block mb-2 text-primary">Annunci recenti:</strong>
                 <!-- Example row of columns -->
-                <div class="row" id="appendResultHere">
-                    <!--<div class="col-md-6">
-                        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                            <div class="card-body d-flex flex-column align-items-start">
-                                <strong class="d-inline-block mb-2 text-primary">World</strong>
-                                <h3 class="mb-0">
-                                    <a href="#" class="wstitle">Featured post</a>
-                                </h3>
-                                <div class="mb-1 text-muted">Nov 12</div>
-                                <p class="card-text mb-auto">This is a wider card with supporting text below as a
-                                    natural
-                                    lead-in to additional content.</p>
-                                <a href="#">Continua a leggere... <i class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </div>
+                <div class="row" id="appendHeadingTopic">
+                    <!--<div class="col-md-4">
+                        <h2 class="worksans">HEADING</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor
+                            mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada
+                            magna mollis euismod. Donec sed odio dui. </p>
+                        <p><a class="btn btn-outline-light" href="#" role="button">Continua &raquo;</a></p>
                     </div>-->
                 </div>
-                <div class="row" id="loadPost">
-                    <div class="col-md-12">
-                        <div class="card flex-md-row mb-4 box-shadow h-md-250">
-                            <div class="card-body">
-                                <div style="text-align: center; font-size: 40px">
-                                    <i class="fas fa-spinner fa-spin"></i><br>
-                                    <p>Caricamento dei post...</p>
+
+            </div> <!-- /container -->
+            <hr>
+            <div class="container carousel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="worksans">post recenti</h2>
+                        </div>
+                    </div>
+                    <!-- Example row of columns -->
+                    <div class="row" id="appendResultHere">
+                        <!--<div class="col-md-6">
+                            <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                                <div class="card-body d-flex flex-column align-items-start">
+                                    <strong class="d-inline-block mb-2 text-primary">World</strong>
+                                    <h3 class="mb-0">
+                                        <a href="#" class="wstitle">Featured post</a>
+                                    </h3>
+                                    <div class="mb-1 text-muted">Nov 12</div>
+                                    <p class="card-text mb-auto">This is a wider card with supporting text below as a
+                                        natural
+                                        lead-in to additional content.</p>
+                                    <a href="#">Continua a leggere... <i class="fas fa-external-link-alt"></i></a>
                                 </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="loadPost">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card flex-md-row mb-4 box-shadow h-md-250">
+                        <div class="card-body">
+                            <div style="text-align: center; font-size: 40px">
+                                <i class="fas fa-spinner fa-spin"></i><br>
+                                <p>Caricamento del contenuto...</p>
                             </div>
                         </div>
                     </div>
@@ -241,7 +245,8 @@
         <a type="button" id="backtop" href="#top" class="btn  btn-outline-light btn-lg btn-block"><i
                 class="fas fa-arrow-up "></i> Torna in alto!</a>
         <hr>
-    </div><!-- /.container -->
+    </div>
+    <!-- /.container -->
     <!-- FOOTER -->
     <footer class="container">
         <div class="row">
@@ -285,8 +290,8 @@
                 </ul>
             </div>
             <div class="col-12 col-md">
-                <img class="mb-2  rounded mx-auto d-block"
-                     src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">
+                <!--<img class="mb-2  rounded mx-auto d-block"
+                     src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="24" height="24">-->
                 <small class="d-block mb-3 text-muted" style="text-align: center">© 2015-2018</small>
                 <small class="d-block mb-3 text-muted tip" style="text-align: center">Creata con <i class="fas fa-heart"
                                                                                                     style="color: firebrick;"></i>
