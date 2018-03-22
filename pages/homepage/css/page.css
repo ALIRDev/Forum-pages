@@ -251,3 +251,7 @@ a{
 .infolink:hover{
     color: #0056b3 !important;
 }
+
+.card-footer{
+    background-color: #2d3035 !important;
+}

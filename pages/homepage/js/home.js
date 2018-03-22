@@ -69,7 +69,7 @@ function appendHeading(data) {
 
         var date = moment(firstDate).fromNow();
 
-        var element2 = "<div class='col-md-4'> " +
+        var element2 = "<div class='col-md-4 hvr-grow'> " +
             "<div class='card' style='min-height: 150px; max-height: 150px;'> " +
             "<div class='card-body'> " +
             "<h5 class='card-title worksans' style='min-height: 60px'><a href='" + topicUrl + "'>" + topicTitle + "</a></h5> " +
@@ -101,7 +101,7 @@ function appendArticles(data) {
 
         var date = moment(firstDate).fromNow();
 
-        var element = "<div class='col-md-6' style='overflow: hidden;'>" +
+        var element = "<div class='col-md-6 hvr-grow' style='overflow: hidden;'>" +
             "<div class='card flex-md-row mb-4 box-shadow h-md-250' style='overflow: hidden;'> " +
             "<div class='card-body d-flex flex-column align-items-start' style='overflow: hidden;'> " +
             "<strong class='d-inline-block mb-2 text-primary' style='font-size: small'>" + forum + "</strong> " +
