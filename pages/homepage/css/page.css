@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans|Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Exo');
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -7,16 +7,17 @@
 body {
     padding-top: 5.7rem;
     padding-bottom: 3rem;
-    background-color: #212327;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Exo', sans-serif;
+    background: url("https://daks2k3a4ib2z.cloudfront.net/58f22ec2d5fc681355abc7eb/58f51f58f635b6783866f643_default.jpg") repeat-y fixed center top;
 }
 
 nav{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-size: xx-large;
     font-weight: bold;
-    background: linear-gradient(141deg, #2D3035 0%, #2D3035 51%, #212327 75%);
+    background: url("https://daks2k3a4ib2z.cloudfront.net/58f22ec2d5fc681355abc7eb/58f51f58f635b6783866f643_default.jpg") repeat-y fixed center top;
+    border-bottom: 1px solid #4d5055;
 }
 
 a{
@@ -24,19 +25,19 @@ a{
 }
 
 .worksans{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
 
 .wstitle{
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Exo', sans-serif;
     font-weight: bold;
     text-transform: capitalize;
 }
 
 .tip {
-    font-family: 'Indie Flower', serif;
+    font-family: 'Exo', serif;
     position: absolute;
     color: rgb(117, 117, 117);
     margin: 10px 5px;
@@ -115,10 +116,71 @@ a{
     left: 5px;
 }
 
+.button-arma{
+    background-color: rgba(0,0,0,.35);
+    box-shadow: 0 0 6px -1px #000;
+    border-radius: 0 !important;
+    border: 1px solid #000;
+    text-align: center;
+    color: white;
+}
+
+.button-arma:hover{
+    background-color: hsla(0,0%,100%,.08);
+    box-shadow: 0 0 6px -1px #000;
+    border-radius: 0 !important;
+    border: 1px solid #000;
+    text-align: center;
+    color: white;
+}
+
 .card{
-    border-color: #2b2b2f;
-    background-color: #2d3035;
-    color: #ffffff;
+    margin-top: 10px;
+    padding-right: 12px;
+    padding-bottom: 7px;
+    padding-left: 11px;
+    border-radius: 0 !important;
+    box-shadow: 0 0 10px 0 #000;
+    opacity: 1;
+    transition: opacity 1000ms ease-out 0s;
+    border: 1px solid #000;
+    background-color: hsla(0,0%,100%,.08);
+}
+
+.services-line{
+    background-color: rgba(0,0,0,.35);
+    box-shadow: 0 0 6px -1px #000;
+    border-radius: 0 !important;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.carosel-style-black{
+    background-color: rgba(0,0,0,.35);
+}
+
+.title-carosel{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.card-black{
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.35);
+    box-shadow: 0 0 6px -1px #000;
+    font-size: 20px;
+    border-radius: 0 !important;
+    border: 1px solid #000;
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer-black{
+    background-color: rgba(0,0,0,.35);
+    box-shadow: 0 0 6px -1px #000;
+    border: 1px solid #000;
+    padding: 2%;
+    border-radius: 0 !important;
 }
 
 .modal-content{
@@ -253,5 +315,5 @@ a{
 }
 
 .card-footer{
-    background-color: #2d3035 !important;
+    color: #5f5f64 !important;
 }

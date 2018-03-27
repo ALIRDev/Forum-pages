@@ -19,7 +19,7 @@ function generateNews() {
     var serverKey = "10f9dfa58c23a1ab511fc2478672ebef";
 
     $.ajax({
-        url: "https://cors-anywhere.herokuapp.com/https://alir.eu/api/forums/topics?key=" + serverKey + "&forums=40,116,153&sortDir=desc&hidden=0",
+        url: "https://cors-anywhere.herokuapp.com/https://alir.eu/api/forums/topics?key=" + serverKey + "&forums=75,40,116,153&sortDir=desc&hidden=0",
         type: 'GET',
         dataType: "json",
         timeout: 5000
