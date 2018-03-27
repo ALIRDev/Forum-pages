@@ -133,26 +133,3 @@ $(document).ready(function () {
     },10000);
 
 });
-
-// https://alir.eu/api/forums/topics?key=a0d79d24019ae8e0c12af0c34e6ce57f&forums=112&sortBy=date&sortDir=desc
-// Ottengo gli annunci pubblicati dal più recente
-/**
- * $.ajax({
-    *       url: "https://cors-anywhere.herokuapp.com/https://alir.eu/api/forums/topics?key=a0d79d24019ae8e0c12af0c34e6ce57f&forums=112&sortBy=date&sortDir=desc",
-    *       type: 'GET',
-    *       dataType: "json",
-    *       timeout: 5000
- *   }).done(function (data) {
- *       //console.log(data)
- *   });
- *
- */
-
-// https://alir.eu/api/forums/topics?key=10f9dfa58c23a1ab511fc2478672ebef&forums=40,116,153&sortDir=desc&hidden=0
-
-// https://alir.eu/api/forums/topics?key=10f9dfa58c23a1ab511fc2478672ebef&sortBy=date
-
-// Tentativo all topic by date
-// Ingloba post di sezioni archiviate e admin vanno selezionate le sezioni per pulire le aree
-
-//10f9dfa58c23a1ab511fc2478672ebef
