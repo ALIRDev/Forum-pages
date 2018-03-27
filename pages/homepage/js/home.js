@@ -126,8 +126,12 @@ function appendArticles(data) {
 
 $(document).ready(function () {
     console.log("Avvio import dati");
-    generateNews();
-    requestStaffNews();
+
+    setTimeout(function(){
+        generateNews();
+        requestStaffNews();
+    },10000);
+
 });
 
 // https://alir.eu/api/forums/topics?key=a0d79d24019ae8e0c12af0c34e6ce57f&forums=112&sortBy=date&sortDir=desc
@@ -141,7 +145,7 @@ $(document).ready(function () {
  *   }).done(function (data) {
  *       //console.log(data)
  *   });
- * 
+ *
  */
 
 // https://alir.eu/api/forums/topics?key=10f9dfa58c23a1ab511fc2478672ebef&forums=40,116,153&sortDir=desc&hidden=0
