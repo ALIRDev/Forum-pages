@@ -4,53 +4,82 @@
  * Created by Andreacw (Altis Life Italia Reloaded Team)
  */
 
-#borderYtBanner:hover{
-    box-shadow:
-            1px 1px #454a4f,
-            2px 2px #454a4f,
-            3px 3px #454a4f;
+#borderYtBanner:hover {
+    box-shadow: 1px 1px #454a4f,
+    2px 2px #454a4f,
+    3px 3px #454a4f;
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
     cursor: pointer;
     background-color: #2D3035 !important;
 }
 
-#ipsLayout_body{
+#ipsLayout_body {
     padding-top: 1% !important;
 
 }
-.ipsBreadcrumb{
-    background-color: rgba(0,0,0,.35) !important;
+
+.ipsBreadcrumb {
+    background-color: rgba(0, 0, 0, .35) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
     border: 1px solid #000 !important;
 }
 
-#elUserNav{
+#elUserNav {
     background-color: rgba(6, 6, 6, 0.7) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
     border: 1px solid #000 !important;
 }
 
-.ipsWidget{
-    background-color: hsla(0,0%,100%,.08) !important;
+.ipsWidget {
+    background-color: hsla(0, 0%, 100%, .08) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
 }
 
-.ipsWidget{border: 1px solid #000 !important;}
-
-.ipsWidget_title, .ipsType_sectionTitle{
-    background-color: rgba(0,0,0,.35) !important;
+.ipsWidget {
+    border: 1px solid #000 !important;
 }
 
-.ipsWidget_inner{
-    background-color: hsla(0,0%,100%,.08) !important;
+.ipsWidget_title, .ipsType_sectionTitle {
+    background-color: rgba(0, 0, 0, .35) !important;
 }
 
-.ipsBox, .ipsDialog > div, .ipsStreamItem.ipsStreamItem_contentBlock, .ipsMemberCard, #elUserSignIn_external .ipsAreaBackground_light, .ipsReact_reactCount, .ipsDataItem.cForumGrid, .ipsCalendarDate, .eventStreamDate .ipsCalendarDate, .ipsRichEmbed .ipsCalendarDate, div#elTabBar, #elLeaderboardContent, #elLeaderboardContent section.ipsSpacer_top, .cPopularItem, .cStaffDirectory_full, .cStaffDirectory .ipsGrid > div, .cGalleryCat, .cNexusCategoryBlock, #elClubHeader, #elMyClubsActivity .ipsStreamItem.ipsStreamItem_contentBlock, #elGalleryHeader, #elGalleryImage{
-    background-color: hsla(0,0%,100%,.08) !important;
+.ipsWidget_inner {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.ipsBox, .ipsDialog > div, .ipsStreamItem.ipsStreamItem_contentBlock, .ipsMemberCard, #elUserSignIn_external .ipsAreaBackground_light, .ipsReact_reactCount, .ipsDataItem.cForumGrid, .ipsCalendarDate, .eventStreamDate .ipsCalendarDate, .ipsRichEmbed .ipsCalendarDate, div#elTabBar, #elLeaderboardContent, #elLeaderboardContent section.ipsSpacer_top, .cPopularItem, .cStaffDirectory_full, .cStaffDirectory .ipsGrid > div, .cGalleryCat, .cNexusCategoryBlock, #elClubHeader, #elMyClubsActivity .ipsStreamItem.ipsStreamItem_contentBlock, #elGalleryHeader, #elGalleryImage {
+    background-color: hsla(0, 0%, 100%, .08) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
+}
+
+.ipsAreaBackground_reset {
+    background-color: hsla(0, 0%, 2%, 0.31) !important;
+}
+
+.ipsDataList.ipsDataList_zebra .ipsDataItem:not(.ipsDataItem_selected):not(.ipsModerated):not(.ipsDataItem_new):not(.ipsDataItem_success):not(.ipsDataItem_warning):not(.ipsDataItem_error):not(.ipsDataItem_info):not(.ipsDataItem_status):nth-child(2n) {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.cForumList {
+    color: #f8f9fa;
+}
+
+.cForumList .ipsDataList.ipsDataList_zebra :not(:last-child).ipsDataItem {
+    border-bottom: 1px solid #000;
+}
+
+.ipsBox .ipsAreaBackground_light,
+.ipsAttachment_dropZone.ipsDragging,
+.ipsComposeArea_dropZone.ipsDragging,
+.ipsDataList.ipsDataList_zebra .ipsDataItem:not( .ipsDataItem_selected ):not( .ipsModerated ):nth-child(even),
+.cStatusUpdates .ipsComment.ipsComment_hasChildren > .ipsComment_content,
+.ipsApp.ipsApp_front .ipsFieldRow_section,
+.cPayment,
+.cRatingColumn_on {
+    background-color: hsla(0, 0%, 82%, 0.31) !important;
 }
