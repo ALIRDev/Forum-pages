@@ -1,6 +1,6 @@
 var codeKey = 'bcdzrsb2sy4nfdpb3w9g2fk7f5kqre04c2k';
 
-$(document).ready(function () {
+$(window).load(function() {
     var request = {
         url: 'https://arma3-servers.net/api/?object=servers&element=detail&key=' + codeKey,
         type: 'GET',
@@ -11,31 +11,32 @@ $(document).ready(function () {
 
     $.ajax(request);
 
-});
 
-function onDataReceived(data) {
-    var server = JSON.parse(data);
+    function onDataReceived(data) {
+        var server = JSON.parse(data);
 
-    $('#alirServerQueryLoading').attr('hidden',true);
-    $('#alirServerQuerySuccess').removeAttr('hidden');
+        $('#alirServerQueryLoading').attr('hidden',true);
+        $('#alirServerQuerySuccess').removeAttr('hidden');
 
-    $('#aliraddress').text(server.address);
-    $('#alirport').text(server.port);
+        $('#aliraddress').text(server.address);
+        $('#alirport').text(server.port);
 
-    if(server.is_online === '1'){
-        $('#server_on').removeAttr('disabled');
-        $('#server_off').attr('disabled',true);
-    }else{
-        $('#server_off').removeAttr('disabled');
-        $('#server_on').attr('disabled',true);
+        if(server.is_online === '1'){
+            $('#server_on').removeAttr('disabled');
+            $('#server_off').attr('disabled',true);
+        }else{
+            $('#server_off').removeAttr('disabled');
+            $('#server_on').attr('disabled',true);
+        }
+        $('#alirplayeron').text(server.players);
+        $('#alirmaxplayer').text(server.maxplayers);
+        $('#alirurlarmaservernet').text(server.url);
     }
-    $('#alirplayeron').text(server.players);
-    $('#alirmaxplayer').text(server.maxplayers);
-    $('#alirurlarmaservernet').text(server.url);
-}
 
-function onDataError() {
-    $('#alirServerQueryLoading').attr('hidden',true);
-    $('#alirServerQuerySuccess').attr('hidden',true);
-    $('#alirServerQueryError').removeAttr('hidden');
-}
+    function onDataError() {
+        $('#alirServerQueryLoading').attr('hidden',true);
+        $('#alirServerQuerySuccess').attr('hidden',true);
+        $('#alirServerQueryError').removeAttr('hidden');
+    }
+
+});
