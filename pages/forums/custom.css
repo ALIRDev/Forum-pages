@@ -1,0 +1,56 @@
+/**
+ * This file is for your custom CSS.
+ * This file is not modified or overwritten during upgrades
+ * Created by Andreacw (Altis Life Italia Reloaded Team)
+ */
+
+#borderYtBanner:hover{
+    box-shadow:
+            1px 1px #454a4f,
+            2px 2px #454a4f,
+            3px 3px #454a4f;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    cursor: pointer;
+    background-color: #2D3035 !important;
+}
+
+#ipsLayout_body{
+    padding-top: 1% !important;
+
+}
+.ipsBreadcrumb{
+    background-color: rgba(0,0,0,.35) !important;
+    box-shadow: 0 0 6px -1px #000 !important;
+    border-radius: 0 !important;
+    border: 1px solid #000 !important;
+}
+
+#elUserNav{
+    background-color: rgba(6, 6, 6, 0.7) !important;
+    box-shadow: 0 0 6px -1px #000 !important;
+    border-radius: 0 !important;
+    border: 1px solid #000 !important;
+}
+
+.ipsWidget{
+    background-color: hsla(0,0%,100%,.08) !important;
+    box-shadow: 0 0 6px -1px #000 !important;
+    border-radius: 0 !important;
+}
+
+.ipsWidget{border: 1px solid #000 !important;}
+
+.ipsWidget_title, .ipsType_sectionTitle{
+    background-color: rgba(0,0,0,.35) !important;
+}
+
+.ipsWidget_inner{
+    background-color: hsla(0,0%,100%,.08) !important;
+}
+
+.ipsBox, .ipsDialog > div, .ipsStreamItem.ipsStreamItem_contentBlock, .ipsMemberCard, #elUserSignIn_external .ipsAreaBackground_light, .ipsReact_reactCount, .ipsDataItem.cForumGrid, .ipsCalendarDate, .eventStreamDate .ipsCalendarDate, .ipsRichEmbed .ipsCalendarDate, div#elTabBar, #elLeaderboardContent, #elLeaderboardContent section.ipsSpacer_top, .cPopularItem, .cStaffDirectory_full, .cStaffDirectory .ipsGrid > div, .cGalleryCat, .cNexusCategoryBlock, #elClubHeader, #elMyClubsActivity .ipsStreamItem.ipsStreamItem_contentBlock, #elGalleryHeader, #elGalleryImage{
+    background-color: hsla(0,0%,100%,.08) !important;
+    box-shadow: 0 0 6px -1px #000 !important;
+    border-radius: 0 !important;
+}
