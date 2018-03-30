@@ -43,7 +43,7 @@
     border: 1px solid #000 !important;
 }
 
-.ipsWidget_title, .ipsType_sectionTitle, .ipsComment_header{
+.ipsWidget_title, .ipsType_sectionTitle, .ipsComment_header {
     background-color: rgba(0, 0, 0, .35) !important;
 }
 
@@ -51,7 +51,7 @@
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-.ipsType_pageTitle, .ipsType_sectionTitle, .ipsType_secondaryTitle, .ipsType_sectionHead, .ipsType_minorHeading{
+.ipsType_pageTitle, .ipsType_sectionTitle, .ipsType_secondaryTitle, .ipsType_sectionHead, .ipsType_minorHeading {
     font-family: "Exo", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
 
@@ -61,7 +61,7 @@
     border-radius: 0 !important;
 }
 
-.ipsAreaBackground_reset {
+.ipsAreaBackground_reset, #elChatboxContent, #chatBoxForm {
     background-color: hsla(0, 0%, 2%, 0.31) !important;
 }
 
@@ -88,33 +88,46 @@
     background-color: hsla(0, 0%, 82%, 0.31) !important;
 }
 
-.ipsComment_highlighted.ipsBox:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular), .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) .ipsAreaBackground_reset{
+.ipsComment_highlighted.ipsBox:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular), .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) .ipsAreaBackground_reset {
     background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-.cPost.ipsComment_highlighted .ipsComment_content{
-    background-color: hsla(358, 56%, 51%, 0.08) !important;
+.cPost.ipsComment_highlighted .ipsComment_content {
+    background-color: hsla(0, 0%, 100%, .08) !important;
 }
 
-.ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular){
+.ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) {
     box-shadow: 0 0 6px -1px #c83e42 !important;
     border: 1px solid #c83e42 !important;
 }
 
-.ipsComment_content{
+.ipsComment_content {
     height: 100% !important;
 }
 
-footer{
+footer {
     padding-top: 1% !important;
 }
 
-#ipsLayout_footer{
+#ipsLayout_footer {
     background: none !important;
 }
 
-.ta-Footer{
+.ta-Footer {
     background-color: hsla(0, 0%, 2%, 0.31) !important;
     border-top: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
+}
+
+.ipsComment.ipsComment_selected .ipsComment_content,
+.ipsComment.ipsComment_selected .ipsComment_author,
+.cPost.ipsBox.ipsComment_selected:not( .ipsBox_transparent ):not( .ipsModerated ),
+.cPost.ipsBox.ipsModerated.ipsComment_selected:not( .ipsBox_transparent ){
+    background-color: hsla(0, 0%, 2%, 0.31) !important;
+}
+
+.ipsReact_reactCount{
+    background-color: hsla(0, 0%, 2%, 0.31) !important;
+    border: 1px solid #000 !important;
+    color: #f8f9fa !important;
 }
