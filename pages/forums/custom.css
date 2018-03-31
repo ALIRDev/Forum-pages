@@ -34,7 +34,7 @@
 }
 
 .ipsWidget {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
 }
@@ -48,7 +48,7 @@
 }
 
 .ipsWidget_inner, .ipsComment, .ipsAreaBackground {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
 .ipsType_pageTitle, .ipsType_sectionTitle, .ipsType_secondaryTitle, .ipsType_sectionHead, .ipsType_minorHeading {
@@ -56,13 +56,13 @@
 }
 
 .ipsBox, .ipsDialog > div, .ipsStreamItem.ipsStreamItem_contentBlock, .ipsMemberCard, #elUserSignIn_external .ipsAreaBackground_light, .ipsReact_reactCount, .ipsDataItem.cForumGrid, .ipsCalendarDate, .eventStreamDate .ipsCalendarDate, .ipsRichEmbed .ipsCalendarDate, div#elTabBar, #elLeaderboardContent, #elLeaderboardContent section.ipsSpacer_top, .cPopularItem, .cStaffDirectory_full, .cStaffDirectory .ipsGrid > div, .cGalleryCat, .cNexusCategoryBlock, #elClubHeader, #elMyClubsActivity .ipsStreamItem.ipsStreamItem_contentBlock, #elGalleryHeader, #elGalleryImage {
-    background-color: hsla(0, 0%, 35%, .08) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
 }
 
 .ipsAreaBackground_reset, #elChatboxContent, #chatBoxForm {
-    background-color: hsla(0, 0%, 2%, 0.31) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
 .ipsDataList.ipsDataList_zebra .ipsDataItem:not(.ipsDataItem_selected):not(.ipsModerated):not(.ipsDataItem_new):not(.ipsDataItem_success):not(.ipsDataItem_warning):not(.ipsDataItem_error):not(.ipsDataItem_info):not(.ipsDataItem_status):nth-child(2n) {
@@ -89,11 +89,11 @@
 }
 
 .ipsComment_highlighted.ipsBox:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular), .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) .ipsAreaBackground_reset {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
 .cPost.ipsComment_highlighted .ipsComment_content {
-    background-color: hsla(0, 0%, 100%, .08) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
 .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) {
@@ -123,15 +123,19 @@ footer {
 .ipsComment.ipsComment_selected .ipsComment_author,
 .cPost.ipsBox.ipsComment_selected:not( .ipsBox_transparent ):not( .ipsModerated ),
 .cPost.ipsBox.ipsModerated.ipsComment_selected:not( .ipsBox_transparent ){
-    background-color: hsla(0, 0%, 2%, 0.31) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
 .ipsReact_reactCount{
-    background-color: hsla(0, 0%, 2%, 0.31) !important;
+    background-color: rgba(0, 0, 0, 0.048) !important;
     border: 1px solid #000 !important;
     color: #f8f9fa !important;
 }
 
 .SG_record_right_with_image h1 {
     color: #f8f9fa !important;
+}
+
+.ipsDialog, .ipsDialog_title, .ipsDialog_content{
+    background-color: rgba(0, 0, 0, 0.048) !important;
 }
