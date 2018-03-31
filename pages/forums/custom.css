@@ -139,3 +139,6 @@ footer {
 .ipsDialog, .ipsDialog_title, .ipsDialog_content{
     background-color: rgba(0, 0, 0, 0.048) !important;
 }
+.ipsMessage_warning{
+    background-color: rgba(240, 154, 57, 0.747) !important;
+}
