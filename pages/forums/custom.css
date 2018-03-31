@@ -4,23 +4,13 @@
  * Created by Andreacw (Altis Life Italia Reloaded Team)
  */
 
-#borderYtBanner:hover {
-    box-shadow: 1px 1px #454a4f,
-    2px 2px #454a4f,
-    3px 3px #454a4f;
-    -webkit-transform: translateX(-3px);
-    transform: translateX(-3px);
-    cursor: pointer;
-    background-color: #2D3035 !important;
-}
-
-#ipsLayout_body {
+ #ipsLayout_body {
     padding-top: 1% !important;
 
 }
 
 .ipsBreadcrumb {
-    background-color: rgba(0, 0, 0, .35) !important;
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 30%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 70%,rgba(255,255,255,0) 100%) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
     border: 1px solid #000 !important;
@@ -34,7 +24,7 @@
 }
 
 .ipsWidget {
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: rgba(0,0,0,.5) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
 }
@@ -44,11 +34,15 @@
 }
 
 .ipsWidget_title, .ipsType_sectionTitle, .ipsComment_header {
-    background-color: rgba(0, 0, 0, .35) !important;
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 30%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 70%,rgba(255,255,255,0) 100%) !important;
 }
 
-.ipsWidget_inner, .ipsComment, .ipsAreaBackground {
-    background-color: rgba(0, 0, 0, 0.048) !important;
+.ipsWidget_inner {
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
+.ipsComment, .ipsAreaBackground{
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .ipsType_pageTitle, .ipsType_sectionTitle, .ipsType_secondaryTitle, .ipsType_sectionHead, .ipsType_minorHeading {
@@ -56,7 +50,7 @@
 }
 
 .ipsBox, .ipsDialog > div, .ipsStreamItem.ipsStreamItem_contentBlock, .ipsMemberCard, #elUserSignIn_external .ipsAreaBackground_light, .ipsReact_reactCount, .ipsDataItem.cForumGrid, .ipsCalendarDate, .eventStreamDate .ipsCalendarDate, .ipsRichEmbed .ipsCalendarDate, div#elTabBar, #elLeaderboardContent, #elLeaderboardContent section.ipsSpacer_top, .cPopularItem, .cStaffDirectory_full, .cStaffDirectory .ipsGrid > div, .cGalleryCat, .cNexusCategoryBlock, #elClubHeader, #elMyClubsActivity .ipsStreamItem.ipsStreamItem_contentBlock, #elGalleryHeader, #elGalleryImage {
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: rgba(0,0,0,.5) !important;
     box-shadow: 0 0 6px -1px #000 !important;
     border-radius: 0 !important;
 }
@@ -85,15 +79,15 @@
 .ipsApp.ipsApp_front .ipsFieldRow_section,
 .cPayment,
 .cRatingColumn_on {
-    background-color: hsla(0, 0%, 82%, 0.31) !important;
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .ipsComment_highlighted.ipsBox:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular), .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) .ipsAreaBackground_reset {
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .cPost.ipsComment_highlighted .ipsComment_content {
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .ipsComment_highlighted:not(.ipsBox_transparent):not(.ipsModerated):not(.ipsComment_selected):not(.ipsComment_popular) {
@@ -114,7 +108,7 @@ footer {
 }
 
 .ta-Footer {
-    background-color: hsla(0, 0%, 2%, 0.31) !important;
+    background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(0,0,0,.5) 30%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.5) 70%,rgba(255,255,255,0) 100%) !important;
     border-top: 1px solid #000 !important;
     border-bottom: 1px solid #000 !important;
 }
@@ -123,12 +117,16 @@ footer {
 .ipsComment.ipsComment_selected .ipsComment_author,
 .cPost.ipsBox.ipsComment_selected:not( .ipsBox_transparent ):not( .ipsModerated ),
 .cPost.ipsBox.ipsModerated.ipsComment_selected:not( .ipsBox_transparent ){
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: rgba(0,0,0,.5) !important;
 }
 
 .ipsReact_reactCount{
-    background-color: rgba(0, 0, 0, 0.048) !important;
+    background-color: hsla(0, 0%, 100%, .08) !important;
     border: 1px solid #000 !important;
+    color: #f8f9fa !important;
+}
+
+.ipsReact_reactCount > span > span:last-child, .ipsReact_reactCount > a > span:last-child{
     color: #f8f9fa !important;
 }
 
@@ -137,6 +135,14 @@ footer {
 }
 
 .ipsDialog, .ipsDialog_title, .ipsDialog_content{
+    background-color: rgba(0, 0, 0, 0.048) !important;
+}
+
+.ipsContained{
+    background-color: rgba(0, 0, 0, 0.048) !important;
+}
+
+.ipsComment_author{
     background-color: rgba(0, 0, 0, 0.048) !important;
 }
 
