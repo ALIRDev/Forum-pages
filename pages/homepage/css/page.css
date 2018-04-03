@@ -16,7 +16,7 @@ nav{
     font-family: 'Exo', sans-serif;
     font-size: xx-large;
     font-weight: bold;
-    background: url("https://www.alir.eu/etero/sectionImages/homepage/arma_def.jpg") repeat-y fixed center top;
+    background: linear-gradient(141deg, #2D3035 0%, #2D3035 51%, #212327 75%);
     border-bottom: 1px solid #4d5055;
 }
 
@@ -222,9 +222,16 @@ a{
     background-position: center center;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
+    color: #ffffff ! important;
 }
 
 .aliricon a:hover {
+    background-color: rgba(0,0,0,.35);
+    box-shadow: 0 0 6px -1px #000;
+    font-size: 20px;
+    color: #ffffff ! important;
+    border-radius: 0 !important;
+    border: 1px solid #000;
     background-size: 0;
     -webkit-transition: all .2s ease-out;
     transition: all .2s ease-out;
@@ -235,7 +242,7 @@ a{
     top: 50%;
     width: 100%;
     margin-top: -7px;
-    color: #3D6594;
+    color: #ffffff;
     font-size: 13px;
     text-align: center;
     -webkit-transition: all .3s ease-out;
