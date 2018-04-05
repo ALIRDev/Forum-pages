@@ -2,14 +2,13 @@
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
-/* Padding below the footer and lighter body text */
 
 body {
     padding-top: 5.7rem;
     padding-bottom: 3rem;
     color: #ffffff;
     font-family: 'Exo', sans-serif;
-    background: url("https://www.alir.eu/etero/sectionImages/homepage/arma_def.jpg") repeat-y fixed center top;
+    background: url("https://www.alir.eu/etero/sectionImages/homepage/arma_def.jpg") repeat-y fixed center top #000000;
 }
 
 nav{
@@ -77,6 +76,19 @@ a{
 .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+}
+
+.infolink{
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.infolink:hover{
+    color: #0056b3 !important;
+}
+
+.card-footer{
+    color: #5f5f64 !important;
 }
 
 /* RESPONSIVE CSS
@@ -292,9 +304,12 @@ a{
     cursor: not-allowed;
 }
 
+/* MOBILE RESPONSIVE
+-------------------------------------------------- */
+
 @media screen and (max-width: 1100px){
 
-    #myCarousel{
+    #alirCarousel{
         display: none;
     }
 
@@ -310,17 +325,4 @@ a{
         display: none;
     }
 
-}
-
-.infolink{
-    padding-left: 5px;
-    cursor: pointer;
-}
-
-.infolink:hover{
-    color: #0056b3 !important;
-}
-
-.card-footer{
-    color: #5f5f64 !important;
 }
