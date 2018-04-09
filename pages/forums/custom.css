@@ -161,3 +161,7 @@ footer {
 div.ipsList_reset{
     background-color: rgba(0, 0, 0, 0.048) !important;
 }
+
+.ipsWidget .ipsAttachment_progress {
+    border: 1px solid #0c0c0c !important;
+}
