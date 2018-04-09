@@ -45,6 +45,10 @@
     background-color: rgba(0,0,0,.5) !important;
 }
 
+.cTopic > .ipsBox > .ipsAreaBackground{
+    background-color: hsla(0, 0%, 100%, .08) !important;
+}
+
 .ipsType_pageTitle, .ipsType_sectionTitle, .ipsType_secondaryTitle, .ipsType_sectionHead, .ipsType_minorHeading {
     font-family: "Exo", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
 }
