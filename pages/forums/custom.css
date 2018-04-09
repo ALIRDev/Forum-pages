@@ -165,3 +165,7 @@ div.ipsList_reset{
 .ipsWidget .ipsAttachment_progress {
     border: 1px solid #0c0c0c !important;
 }
+
+.ipsBox >.cPastLeaders_title span, .cPastLeaders_cell, .cPastLeaders_title::before, .cCalendar td.cCalendar_nonDate, .cForumMiniList_categorySelected, .ipsMemberCard, .ipsDataList.ipsDataList_zebra.cTopicList, .ipsDataList.ipsDataList_zebra[data-role="tableRows"], .ipsSticky, #elDownloadsSubmit_progress.ipsSticky{
+    background: none !important;
+}
