@@ -169,3 +169,15 @@ div.ipsList_reset{
 .ipsBox >.cPastLeaders_title span, .cPastLeaders_cell, .cPastLeaders_title::before, .cCalendar td.cCalendar_nonDate, .cForumMiniList_categorySelected, .ipsMemberCard, .ipsDataList.ipsDataList_zebra.cTopicList, .ipsDataList.ipsDataList_zebra[data-role="tableRows"], .ipsSticky, #elDownloadsSubmit_progress.ipsSticky{
     background: none !important;
 }
+
+.ipsMenu_item > a {
+    color: #f8f9fa !important;
+}
+
+.ipsMenu_item > a:hover {
+    color: #0c0c0c !important;
+}
+
+.cGalleryLightbox_info{
+    background: none !important;
+}
