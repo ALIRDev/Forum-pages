@@ -1,0 +1,6 @@
+#main{
+    border-top: 10px solid rgba(0,0,0,.5); line-height: 1.5;
+    background-color: hsla(0, 0%, 100%, .08) !important;
+    box-shadow: 0 0 6px -1px #000 !important;
+    border-radius: 0 !important;
+}
